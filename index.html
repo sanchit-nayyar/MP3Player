@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="html_resources/style.css">
+	<title>MP3Box</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+		My MP3 Box
+	</header>
+	<!-- <button onclick="shuffle">Shuffle: ON</button> -->
+	<button onclick="switchRepeat();" id="repeatBox">Repeat: ALL</button>
+	<div class="cSong">
+		Currently Playing: <div id="sName">None</div>
+	</div>
+	<div>
+		<form>
+			Upload Playlist File: <input type="file" id="playlist">
+		</form><br><br>
+		
+		<button onclick="prevSong();">Previous</button>
+		<audio id="player" controls></audio>
+		<button onclick="nextSong();">Next</button>
+	</div>
+	<div id="nav"></div>
+	<div id="history"></div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="html_resources/script.js"></script>
+</body>
+</html>
